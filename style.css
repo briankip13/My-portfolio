@@ -26,6 +26,7 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     transition: color0.3s ease;
+     position:relative;
 }
 nav ul li a:hover{
     color: blue;
@@ -61,6 +62,21 @@ form{
      gap:15px;
      max-width:400px;
      margin:0 auto;
+}
+input,extarea,button;
+width:100%;
+padding:10px;
+font-size:1rem;
+boder-radius:5px;
+}
+.button{
+     background-color:#333;
+     color:white;
+     cursor:pointer;
+     transition:background-color0.3s ease;
+     button:hover{
+          backgroud-color:#ff9800;
+
 section h2{
     color: #333;
     margin-bottom: 10px;
@@ -72,5 +88,24 @@ footer{
     padding: 10px0;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%;   
 }
+nav ul li a:before{
+     conent:``;
+     position:asolute;
+     left:0;
+     bottom:00;
+     height:2px;
+     width:0;background:#ff9800;
+     transition:width0.3s ease-ih-out;
+}
+          nav ul li a:hover::before{
+               with:100%;
+          }
+          @media(max-width:768px{
+               nav{
+                    flex-direction:column;
+               }
+               project{
+                    text-align:center;
+               }

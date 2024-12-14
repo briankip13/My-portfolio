@@ -6,6 +6,7 @@ body{
      box-sizing:border-box;
      background-color:#282c34;
      color:rgb(29,27,27);
+     font-size:18px;
 }
 header{
     background: pink;
@@ -17,7 +18,7 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content:center;
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 nav ul li{
